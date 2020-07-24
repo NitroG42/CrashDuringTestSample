@@ -1,0 +1,301 @@
+PS C:\Users\nitro\Logiciel\Dev\android-sdk\emulator> .\emulator.exe -avd "Core-M4_API_28" -verbose -show-kernel
+emulator: Android emulator version 30.0.22.0 (build_id 6677735) (CL:N/A)
+emulator: Found AVD name 'Core-M4_API_28'
+emulator: Found AVD target architecture: x86
+emulator: argv[0]: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\emulator.exe'; program directory: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator'
+emulator:  Found directory: C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\
+
+emulator: emuDirName: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator'
+emulator:  Found directory: C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\
+
+emulator: Probing for C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\kernel-ranchu-64: file exists
+emulator: try dir C:\Users\nitro\Logiciel\Dev\android-sdk\emulator
+emulator: Trying emulator path 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe'
+emulator: Found target-specific 64-bit emulator binary: C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe
+emulator: Adding library search path: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64'
+emulator: Adding library search path: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\gles_angle'
+emulator: Adding library search path: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\gles_angle9'
+emulator: Adding library search path: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\gles_angle11'
+emulator: Adding library search path: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\gles_swiftshader'
+emulator: Adding library search path for Qt: 'C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\qt\lib'
+emulator: Silencing all qWarning(); use qCWarning(...) instead: QT_LOGGING_RULES=default.warning=false
+emulator: Setting Qt plugin search path: QT_QPA_PLATFORM_PLUGIN_PATH=C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\lib64\qt\plugins
+emulator: Setting Qt to use software OpenGL: QT_OPENGL=software
+emulator: Setting QML to use software QtQuick2D: QMLSCENE_DEVICE=softwarecontext
+emulator: Overriding pre-existing bad Qt high dpi settings...
+emulator: Quoted param: [C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe]
+emulator: Quoted param: [-avd]
+emulator: Quoted param: [Core-M4_API_28]
+emulator: Quoted param: [-verbose]
+emulator: Quoted param: [-show-kernel]
+emulator: Running :C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe
+emulator: qemu backend: argv[00] = "C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe"
+emulator: qemu backend: argv[01] = "-avd"
+emulator: qemu backend: argv[02] = "Core-M4_API_28"
+emulator: qemu backend: argv[03] = "-verbose"
+emulator: qemu backend: argv[04] = "-show-kernel"
+emulator: Concatenated backend parameters:
+ C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe -avd Core-M4_API_28 -verbose -show-kernel
+emulator: autoconfig: -skin 480x960
+emulator: autoconfig: -skindir (null)
+emulator: autoconfig: -kernel C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\kernel-ranchu-64
+emulator: Target arch = 'x86'
+emulator: Auto-config: -qemu -cpu qemu32
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\ramdisk.img
+emulator: Using initial system image: C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\system.img
+emulator: Using initial vendor image: C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\vendor.img
+emulator: autoconfig: -data C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\userdata-qemu.img
+emulator: autoconfig: -initdata C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\userdata.img
+emulator: autoconfig: -cache C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\cache.img
+emulator: autoconfig: -sdcard C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\sdcard.img
+emulator: Physical RAM size: 1536MB
+
+emulator: VM heap size 80MB is below hardware specified minimum of 384MB,setting it to that value
+emulator: System image is read only
+emulator: Found 4 DNS servers: 192.168.1.250 fec0:0:0:ffff::1 fec0:0:0:ffff::2 fec0:0:0:ffff::3
+emulator: VERBOSE: System.cpp:2955: querying file version info API...
+emulator: VERBOSE: System.cpp:2963: found kernelbase.dll
+emulator: VERBOSE: System.cpp:2971: GetFileVersionInfoSizeW found. On Windows 10?
+emulator: VERBOSE: System.cpp:2980: GetFileVersionInfoW found. On Windows 10?
+emulator: VERBOSE: System.cpp:3010: VerQueryValueW found. Can query file versions
+emulator: VERBOSE: System.cpp:3033: queryFileVersionInfo: path not found: amdvlk64.dll
+emulator: VERBOSE: System.cpp:2955: querying file version info API...
+emulator: VERBOSE: System.cpp:3033: queryFileVersionInfo: path not found: amdvlk32.dll
+emulator: VERBOSE: System.cpp:2955: querying file version info API...
+emulator: found magic skin width=480 height=960 bpp=16
+
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=v:* androidboot.consolepipe=qemu_pipe,pipe:logcat'
+emulator: Adding boot property: 'qemu.logcat' = 'start'
+emulator: CPU Acceleration: working
+emulator: CPU Acceleration status: GVM (version 1.5) is installed and usable.
+emulator: GPU emulation enabled using 'host' mode
+emulator: Initializing hardware OpenGLES emulation support
+emulator: VERBOSE: MultiDisplay.cpp:304: create display 0
+emulator: VERBOSE: MultiDisplay.cpp:393: setDisplayPose 0 x 0 y 0 w 480 h 960 dpi 0
+emulator: Found 4 DNS servers: 192.168.1.250 fec0:0:0:ffff::1 fec0:0:0:ffff::2 fec0:0:0:ffff::3
+Content of hardware configuration file:
+  hw.cpu.arch = x86
+  hw.cpu.model = qemu32
+  hw.cpu.ncore = 4
+  hw.ramSize = 1536
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.gyroscope = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  hw.sdCard.path = C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\sdcard.img
+  disk.cachePartition = true
+  disk.cachePartition.path = C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\cache.img
+  disk.cachePartition.size = 66m
+  test.quitAfterBootTimeOut = -1
+  test.delayAdbTillBootComplete = 0
+  test.monitorAdb = 0
+  hw.lcd.width = 480
+  hw.lcd.height = 960
+  hw.lcd.depth = 16
+  hw.lcd.density = 240
+  hw.lcd.backlight = true
+  hw.lcd.vsync = 60
+  hw.gltransport = pipe
+  hw.gltransport.asg.writeBufferSize = 1048576
+  hw.gltransport.asg.writeStepSize = 4096
+  hw.gltransport.asg.dataRingSize = 32768
+  hw.gltransport.drawFlushInterval = 800
+  hw.displayRegion.0.1.xOffset = -1
+  hw.displayRegion.0.1.yOffset = -1
+  hw.displayRegion.0.1.width = 0
+  hw.displayRegion.0.1.height = 0
+  hw.display1.width = 0
+  hw.display1.height = 0
+  hw.display1.density = 0
+  hw.display1.xOffset = -1
+  hw.display1.yOffset = -1
+  hw.display1.flag = 0
+  hw.display2.width = 0
+  hw.display2.height = 0
+  hw.display2.density = 0
+  hw.display2.xOffset = -1
+  hw.display2.yOffset = -1
+  hw.display2.flag = 0
+  hw.display3.width = 0
+  hw.display3.height = 0
+  hw.display3.density = 0
+  hw.display3.xOffset = -1
+  hw.display3.yOffset = -1
+  hw.display3.flag = 0
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.initialOrientation = Portrait
+  hw.camera.back = virtualscene
+  hw.camera.front = emulated
+  vm.heapSize = 384
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.magnetic_field_uncalibrated = true
+  hw.sensors.gyroscope_uncalibrated = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.sensor.hinge = false
+  hw.sensor.hinge.count = 0
+  hw.sensor.hinge.type = 0
+  hw.useext4 = true
+  hw.arc = false
+  hw.arc.autologin = false
+  kernel.path = C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\kernel-ranchu-64
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\ramdisk.img
+  disk.systemPartition.initPath = C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\system.img
+  disk.systemPartition.size = 2562m
+  disk.vendorPartition.initPath = C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\vendor.img
+  disk.vendorPartition.size = 800m
+  disk.dataPartition.path = C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\userdata-qemu.img
+  disk.dataPartition.size = 800m
+  disk.encryptionKeyPartition.path = C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\encryptionkey.img
+  PlayStore.enabled = false
+  avd.name = Core-M4_API_28
+  avd.id = Core-M4_API_28
+  fastboot.forceColdBoot = false
+  android.sdk.root = C:\Users\nitro\Logiciel\Dev\android-sdk
+  android.avd.home = C:\Users\nitro\.android\avd
+.
+QEMU options list:
+emulator: argv[00] = "C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe"
+emulator: argv[01] = "-dns-server"
+emulator: argv[02] = "192.168.1.250,fec0:0:0:ffff::1,fec0:0:0:ffff::2,fec0:0:0:ffff::3"
+emulator: argv[03] = "-mem-path"
+emulator: argv[04] = "C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\snapshots\default_boot\ram.img"
+emulator: argv[05] = "-mem-file-shared"
+emulator: argv[06] = "-serial"
+emulator: argv[07] = "con:"
+emulator: argv[08] = "-device"
+emulator: argv[09] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\data\misc\pstore\pstore.bin"
+emulator: argv[10] = "-cpu"
+emulator: argv[11] = "android64"
+emulator: argv[12] = "-enable-gvm"
+emulator: argv[13] = "-smp"
+emulator: argv[14] = "cores=4"
+emulator: argv[15] = "-m"
+emulator: argv[16] = "1536"
+emulator: argv[17] = "-lcd-density"
+emulator: argv[18] = "240"
+emulator: argv[19] = "-nodefaults"
+emulator: argv[20] = "-kernel"
+emulator: argv[21] = "C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\kernel-ranchu-64"
+emulator: argv[22] = "-initrd"
+emulator: argv[23] = "C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\ramdisk.img"
+emulator: argv[24] = "-drive"
+emulator: argv[25] = "if=none,index=0,id=system,if=none,file=C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\system.img,read-only"
+emulator: argv[26] = "-device"
+emulator: argv[27] = "virtio-blk-pci,drive=system,modern-pio-notify"
+emulator: argv[28] = "-drive"
+emulator: argv[29] = "if=none,index=1,id=cache,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[30] = "-device"
+emulator: argv[31] = "virtio-blk-pci,drive=cache,modern-pio-notify"
+emulator: argv[32] = "-drive"
+emulator: argv[33] = "if=none,index=2,id=userdata,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[34] = "-device"
+emulator: argv[35] = "virtio-blk-pci,drive=userdata,modern-pio-notify"
+emulator: argv[36] = "-drive"
+emulator: argv[37] = "if=none,index=3,id=encrypt,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[38] = "-device"
+emulator: argv[39] = "virtio-blk-pci,drive=encrypt,modern-pio-notify"
+emulator: argv[40] = "-drive"
+emulator: argv[41] = "if=none,index=4,id=vendor,if=none,file=C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\vendor.img,read-only"
+emulator: argv[42] = "-device"
+emulator: argv[43] = "virtio-blk-pci,drive=vendor,modern-pio-notify"
+emulator: argv[44] = "-drive"
+emulator: argv[45] = "if=none,index=5,id=sdcard,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[46] = "-device"
+emulator: argv[47] = "virtio-blk-pci,drive=sdcard,modern-pio-notify"
+emulator: argv[48] = "-netdev"
+emulator: argv[49] = "user,id=mynet"
+emulator: argv[50] = "-device"
+emulator: argv[51] = "virtio-net-pci,netdev=mynet"
+emulator: argv[52] = "-device"
+emulator: argv[53] = "virtio-rng-pci"
+emulator: argv[54] = "-show-cursor"
+emulator: argv[55] = "-L"
+emulator: argv[56] = "C:\Users\nitro\Logiciel\Dev\android-sdk\emulator/lib/pc-bios"
+emulator: argv[57] = "-soundhw"
+emulator: argv[58] = "hda"
+emulator: argv[59] = "-vga"
+emulator: argv[60] = "none"
+emulator: argv[61] = "-append"
+emulator: argv[62] = "qemu=1 no_timer_check androidboot.hardware=ranchu androidboot.serialno=EMULATOR30X0X22X0 clocksource=pit no-kvmclock console=ttyS0,38400 android.qemud=1 android.checkjni=1 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=131072 cma=264M@0-4G ndns=4 qemu.wifi=1 mac80211_hwsim.channels=2 androidboot.android_dt_dir=/sys/bus/platform/devices/ANDR0001:00/properties/android/ skip_initramfs rootwait ro init=/init loop.max_part=7 dm="1 vroot none ro 1,0 5159992 verity 1 PARTUUID=7829F48C-F56A-448C-B80D-9CE7B0D371DA PARTUUID=7829F48C-F56A-448C-B80D-9CE7B0D371DA 4096 4096 644999 644999 sha1 f5a16f1e15f7931815e26a0efc105c1fbed3837e 6e0c803732cb44a50ae58fdebe18e50aceb62523 1 ignore_zero_blocks" androidboot.veritymode=enforcing androidboot.verifiedbootstate=orange root=/dev/dm-0 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 qemu.dalvik.vm.heapsize=384m"
+emulator: argv[63] = "-android-hw"
+emulator: argv[64] = "C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\hardware-qemu.ini"
+Concatenated QEMU options:
+ C:\Users\nitro\Logiciel\Dev\android-sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe -dns-server 192.168.1.250,fec0:0:0:ffff::1,fec0:0:0:ffff::2,fec0:0:0:ffff::3 -mem-path C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\snapshots\default_boot\ram.img -mem-file-shared -serial con: -device goldfish_pstore,addr=0xff018000,size=0x10000,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\data\misc\pstore\pstore.bin -cpu android64 -enable-gvm -smp cores=4 -m 1536 -lcd-density 240 -nodefaults -kernel C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\kernel-ranchu-64 -initrd C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\ramdisk.img -drive if=none,index=0,id=system,if=none,file=C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\system.img,read-only -device virtio-blk-pci,drive=system,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=C:\Users\nitro\Logiciel\Dev\android-sdk\system-images\android-28\google_apis\x86\\vendor.img,read-only -device virtio-blk-pci,drive=vendor,modern-pio-notify -drive if=none,index=5,id=sdcard,if=none,file=C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=sdcard,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci -show-cursor -L C:\Users\nitro\Logiciel\Dev\android-sdk\emulator/lib/pc-bios -soundhw hda -vga none -append "qemu=1 no_timer_check androidboot.hardware=ranchu androidboot.serialno=EMULATOR30X0X22X0 clocksource=pit no-kvmclock console=ttyS0,38400 android.qemud=1 android.checkjni=1 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=131072 cma=264M@0-4G ndns=4 qemu.wifi=1 mac80211_hwsim.channels=2 androidboot.android_dt_dir=/sys/bus/platform/devices/ANDR0001:00/properties/android/ skip_initramfs rootwait ro init=/init loop.max_part=7 dm=\"1 vroot none ro 1,0 5159992 verity 1 PARTUUID=7829F48C-F56A-448C-B80D-9CE7B0D371DA PARTUUID=7829F48C-F56A-448C-B80D-9CE7B0D371DA 4096 4096 644999 644999 sha1 f5a16f1e15f7931815e26a0efc105c1fbed3837e 6e0c803732cb44a50ae58fdebe18e50aceb62523 1 ignore_zero_blocks\" androidboot.veritymode=enforcing androidboot.verifiedbootstate=orange root=/dev/dm-0 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 qemu.dalvik.vm.heapsize=384m" -android-hw C:\Users\nitro\.android\avd\Core-M4_API_28_1.avd\hardware-qemu.ini
+emulator: Android qemu version 30.0.22.0 (build_id 6677735) (CL:N/A)
+
+emulator: Starting QEMU main loop
+Failed to open /qemu.conf, err: 2
+emulator: Adding boot property: 'ro.opengles.version' = '131072'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'front'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '384m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '240'
+GVM is operational
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: true
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-tabletmode: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: true
+emulator: control console listening on port 5554, ADB on port 5555
+host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+Not using any http proxy
+emulator: Adding boot property: 'qemu.timezone' = 'Unknown/Unknown'
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: VERBOSE: GrpcServices.cpp:279: Started GRPC server at 127.0.0.1:8554, security: Local
+emulator: emulator_window_fb_rotate
+
+emulator: No acpi ini file provided, using default
+
+emulator: OpenGL Vendor=[Google (NVIDIA Corporation)]
+emulator: OpenGL Renderer=[Android Emulator OpenGL ES Translator (GeForce RTX 2080 Ti/PCIe/SSE2)]
+emulator: OpenGL Version=[OpenGL ES 3.0 (4.5.0 NVIDIA 451.67)]
+emulator: Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=v:* androidboot.consolepipe=qemu_pipe,pipe:logcat'
+emulator: Adding boot property: 'qemu.logcat' = 'start'
+emulator: Adding boot property: 'ro.opengles.version' = '131072'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'front'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '384m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '240'
+emulator: Adding boot property: 'qemu.timezone' = 'Unknown/Unknown'
+emulator: VERBOSE: AdbInterface.cpp:355:  no root specified:
+emulator: VERBOSE: AdbInterface.cpp:385: Found: 2 adb executables
+emulator: VERBOSE: AdbInterface.cpp:387: Adb: C:\Users\nitro\Logiciel\Dev\android-sdk\platform-tools\adb.exe
+emulator: VERBOSE: AdbInterface.cpp:387: Adb: C:\Users\nitro\Logiciel\Dev\android-sdk\platform-tools\adb.exe
+emulator: VERBOSE: AdbInterface.cpp:408: Path:C:\Users\nitro\Logiciel\Dev\android-sdk\platform-tools\adb.exe protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:408: Path:C:\Users\nitro\Logiciel\Dev\android-sdk\platform-tools\adb.exe protocol version: 41
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: OpenGL Vendor=[Google (NVIDIA Corporation)]
+emulator: OpenGL Renderer=[Android Emulator OpenGL ES Translator (GeForce RTX 2080 Ti/PCIe/SSE2)]
+emulator: OpenGL Version=[OpenGL ES 3.0 (4.5.0 NVIDIA 451.67)]
+emulator: onGuestSendCommand: [0000022F873BCCD0] Adb connected, start proxing data
