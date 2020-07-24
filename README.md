@@ -43,8 +43,11 @@ W/Binder: Outgoing transactions from this process must be FLAG_ONEWAY
 ## More info
 
 An issue was opened on the [android-test repo](https://github.com/android/android-test), but was closed because there was no info nor reproducible sample.
+
 The developer [ricard-v](https://github.com/ricard-v) gathered more info for this problems, which might have more results that just the above (SIGSEV in logcat, which I got sometimes)
 Here are somes of his posts:
+
 https://github.com/mockk/mockk/issues/466
+
 https://stackoverflow.com/questions/63059986/android-ui-tests-with-espresso-mockk-crash-with-sigsegv
 
