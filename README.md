@@ -40,6 +40,14 @@ W/Binder: Outgoing transactions from this process must be FLAG_ONEWAY
         at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
 ```
 
+If the tests are launched through Android Studio instead of gradle:
+
+## Result
+
+Right now this bug affect our CI, some of our jobs are regularly crashing in a random way.  
+There is no way to understand what's happening, as the logcat doesn't contains a stacktrace or even a native stacktrace.  
+It seems to happens only in emulators, and sometimes running test through Android Studio will works but not the connectedDebugAndroidTest command.
+
 ## More info
 
 An issue was opened on the [android-test repo](https://github.com/android/android-test), but was closed because there was no info nor reproducible sample.
@@ -47,7 +55,6 @@ An issue was opened on the [android-test repo](https://github.com/android/androi
 The developer [ricard-v](https://github.com/ricard-v) gathered more info for this problems, which might have more results that just the above (SIGSEV in logcat, which I got sometimes)
 Here are somes of his posts:
 
-https://github.com/mockk/mockk/issues/466
-
+https://github.com/mockk/mockk/issues/466  
 https://stackoverflow.com/questions/63059986/android-ui-tests-with-espresso-mockk-crash-with-sigsegv
 

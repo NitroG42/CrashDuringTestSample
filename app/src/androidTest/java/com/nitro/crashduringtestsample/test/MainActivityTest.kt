@@ -1,4 +1,4 @@
-package com.nitro.crashduringtestsample
+package com.nitro.crashduringtestsample.test
 
 import android.content.Context
 import androidx.room.Room
@@ -6,6 +6,7 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
+import com.nitro.crashduringtestsample.MainActivity
 import com.nitro.data.db.DbModule
 import com.nitro.data.db.MyDatabase
 import com.nitro.data.rest.RestModule
