@@ -40,8 +40,6 @@ W/Binder: Outgoing transactions from this process must be FLAG_ONEWAY
         at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
 ```
 
-If the tests are launched through Android Studio instead of gradle:
-
 ## Result
 
 Right now this bug affect our CI, some of our jobs are regularly crashing in a random way.  
