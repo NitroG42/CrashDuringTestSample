@@ -12,8 +12,8 @@
 
 ## Given
 
-Checkout this project and run the ./gradlew connectedDebugAndroidTest
-**If it works try to launch it multiple times in a row** 
+Checkout this project and run the ./gradlew connectedDebugAndroidTest  
+**If it works try to launch it multiple times in a row**  
 On Android P emulator, this should result after sometimes :
 
 ```
