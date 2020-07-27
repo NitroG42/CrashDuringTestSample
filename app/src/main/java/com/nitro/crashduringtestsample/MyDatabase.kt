@@ -1,13 +1,13 @@
-package com.nitro.data.db
+package com.nitro.crashduringtestsample
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.nitro.data.vo.User
 
 /**
- * Created by t.coulange on 24/07/2020.
+ * Created by nitro on 24/07/2020.
+ * Without a DB to listen, no crash
  */
 @Database(entities = [User::class], version = 1)
 abstract class MyDatabase : RoomDatabase() {

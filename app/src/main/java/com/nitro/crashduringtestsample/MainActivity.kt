@@ -4,31 +4,21 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.nitro.crashduringtestsample.databinding.ActivityMainBinding
-import com.nitro.data.repository.UserRepository
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.launch
-import javax.inject.Inject
 
+//Without an android entry point, no crashes
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-
-    @Inject
-    lateinit var userRepository: UserRepository
+    val db: MyDatabase by lazy { MyDatabase.databaseBuilder(applicationContext) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        userRepository.watchUser().filterNotNull().onEach {
-            binding.textView.text = it.name
-        }.launchIn(lifecycleScope)
-        lifecycleScope.launch {
-            userRepository.fetchUser()
-        }
-
+        //Without binding inflation no crash, even if not used
+        ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main)
+        val dao = db.userDao()
+        //Without watching a flow from room no crash
+        dao.watchCurrentUser().filterNotNull().launchIn(lifecycleScope)
     }
 }

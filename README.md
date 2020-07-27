@@ -56,3 +56,16 @@ Here are somes of his posts:
 https://github.com/mockk/mockk/issues/466  
 https://stackoverflow.com/questions/63059986/android-ui-tests-with-espresso-mockk-crash-with-sigsegv
 
+# More findings
+
+After making a minimal sample branch to try to figure out exactly where the problem stands, I have absolutly no clue but it seems to come from a combination of factors 
+(that could just be some bad random binary luck too). Here's what I found, obviously only in this sample as on others projects thre might be other triggers:
+- Have Hilt (maybe dagger ?), Mockk, Room, Core-ktx (but not in version 1.3.1, at least in this sample), Viewbindings
+- Have a ViewBinding inflation, even not used
+- The room dao must have at least 4 methods
+- The activity must watch a flow on the room dao
+- The activity must be annotated with @AndroidEntryPoint
+- The test must mock an interface on which we call coEvery on a method that must return an object, no primitive. 
+- The number of tests must be at least 11
+
+** On my Mac Book Pro, I have to run connectedAndroidTest twice before the tests started to fail each run** 

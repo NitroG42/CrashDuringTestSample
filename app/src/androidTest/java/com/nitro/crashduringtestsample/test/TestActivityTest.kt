@@ -5,45 +5,42 @@ import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import com.nitro.crashduringtestsample.TestActivity
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
-import org.junit.Rule
 import org.junit.Test
 
 /**
- * Created by t.coulange on 24/07/2020.
+ * Created by nitro on 24/07/2020.
+ * Without another activity to test, no crash
  */
-@HiltAndroidTest
 class TestActivityTest {
-
-    @get:Rule(order = 0)
-    var hiltRule = HiltAndroidRule(this)
-
-    @Test
-    fun test() {
+    private fun test() {
         ActivityScenario.launch<TestActivity>(TestActivity::class.java)
         Espresso.onView(withText("Test"))
             .perform(ViewActions.click())
+    }
+
+    @Test
+    fun test1() {
+        test()
     }
 
     @Test
     fun test2() {
-        ActivityScenario.launch<TestActivity>(TestActivity::class.java)
-        Espresso.onView(withText("Test"))
-            .perform(ViewActions.click())
+        test()
     }
 
     @Test
     fun test3() {
-        ActivityScenario.launch<TestActivity>(TestActivity::class.java)
-        Espresso.onView(withText("Test"))
-            .perform(ViewActions.click())
+        test()
     }
 
     @Test
     fun test4() {
-        ActivityScenario.launch<TestActivity>(TestActivity::class.java)
-        Espresso.onView(withText("Test"))
-            .perform(ViewActions.click())
+        test()
+    }
+
+    //Without at least 5 tests here no crash, seems to depends on the binary size of the app/test app ?!
+    @Test
+    fun test5() {
+        test()
     }
 }

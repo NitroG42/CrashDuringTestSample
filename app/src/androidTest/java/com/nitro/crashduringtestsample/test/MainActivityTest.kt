@@ -1,103 +1,61 @@
 package com.nitro.crashduringtestsample.test
 
-import android.content.Context
-import androidx.room.Room
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import com.nitro.crashduringtestsample.MainActivity
-import com.nitro.data.db.DbModule
-import com.nitro.data.db.MyDatabase
-import com.nitro.data.rest.RestModule
-import com.nitro.data.rest.UserApi
-import com.nitro.data.vo.User
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.android.testing.BindValue
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
-import dagger.hilt.android.testing.UninstallModules
-import io.mockk.MockKAnnotations
+import com.nitro.crashduringtestsample.Data
+import com.nitro.crashduringtestsample.FakeApi
 import io.mockk.coEvery
-import io.mockk.impl.annotations.RelaxedMockK
-import org.junit.Before
-import org.junit.Rule
+import io.mockk.mockk
 import org.junit.Test
-import javax.inject.Singleton
 
 /**
- * Created by t.coulange on 24/07/2020.
+ * Created by nitro on 24/07/2020.
  */
-@HiltAndroidTest
-@UninstallModules(DbModule::class, RestModule::class)
+
 class MainActivityTest {
-    @get:Rule(order = 0)
-    var hiltRule = HiltAndroidRule(this)
+    private fun test() {
+        /**
+         * Without a mockk object with a coEvery call no instrumentation runner crash
+         */
+        val notUsedApi: FakeApi = mockk()
+        //Need the coevery, and to return an object, with a boolean no crash
+        coEvery { notUsedApi.getData() } returns Data()
 
-    @BindValue
-    @RelaxedMockK
-    lateinit var api: UserApi
-
-//            = object : UserApi {
-//        override suspend fun getUser(): User {
-//            return User("mock", "Mock User")
-//        }
-//    }
-
-    @Module
-    @InstallIn(ApplicationComponent::class)
-    object TestModule {
-        @Provides
-        @Singleton
-        fun inMemoryDb(@ApplicationContext context: Context): MyDatabase =
-            Room.inMemoryDatabaseBuilder(context, MyDatabase::class.java).build()
+        ActivityScenario.launch<MainActivity>(MainActivity::class.java)
+        Espresso.onView(ViewMatchers.withText("Hello world")).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
-
-
-    @Before
-    fun init() {
-        MockKAnnotations.init(this, relaxUnitFun = true)
-        hiltRule.inject()
-    }
-
 
     @Test
     fun testMockApi() {
-        val expectedName = "Mock User"
-        coEvery { api.getUser() } returns User("mock", expectedName)
-        ActivityScenario.launch<MainActivity>(MainActivity::class.java)
-        Espresso.onView(ViewMatchers.withText(expectedName))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        test()
     }
 
     @Test
     fun testMockApi2() {
-        val expectedName = "Mock User"
-        coEvery { api.getUser() } returns User("mock", expectedName)
-        ActivityScenario.launch<MainActivity>(MainActivity::class.java)
-        Espresso.onView(ViewMatchers.withText(expectedName))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        test()
     }
 
     @Test
     fun testMockApi3() {
-        val expectedName = "Mock User"
-        coEvery { api.getUser() } returns User("mock", expectedName)
-        ActivityScenario.launch<MainActivity>(MainActivity::class.java)
-        Espresso.onView(ViewMatchers.withText(expectedName))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        test()
     }
 
     @Test
     fun testMockApi4() {
-        val expectedName = "Mock User"
-        coEvery { api.getUser() } returns User("mock", expectedName)
-        ActivityScenario.launch<MainActivity>(MainActivity::class.java)
-        Espresso.onView(ViewMatchers.withText(expectedName))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        test()
+    }
+
+    @Test
+    fun testMockApi5() {
+        test()
+    }
+
+    //Without at least 6 tests here no crash, seems to depends on the binary size of the app/test app ?!
+    @Test
+    fun testMockApi6() {
+        test()
     }
 }
