@@ -1,16 +1,16 @@
-package com.nitro.data.db
+package com.nitro.crashduringtestsample
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.nitro.data.vo.User
 import kotlinx.coroutines.flow.Flow
 
 /**
- * Created by t.coulange on 24/07/2020.
+ * Created by nitro on 24/07/2020.
  */
 @Dao
+//Without any of those dao methods, no crash
 interface UserDao {
     @Query("SELECT * FROM USER LIMIT 1")
     fun watchCurrentUser(): Flow<User?>
