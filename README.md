@@ -13,7 +13,7 @@
 ## Given
 
 Checkout this project and run the ./gradlew connectedDebugAndroidTest
-
+**If it works try to launch it multiple times in a row** 
 On Android P emulator, this should result after sometimes :
 
 ```
@@ -68,4 +68,4 @@ After making a minimal sample branch to try to figure out exactly where the prob
 - The test must mock an interface on which we call coEvery on a method that must return an object, no primitive. 
 - The number of tests must be at least 11
 
-** On my Mac Book Pro, I have to run connectedAndroidTest twice before the tests started to fail each run** 
+**On my Mac Book Pro, I have to run connectedAndroidTest twice before the tests started to fail each run** 
