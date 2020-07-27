@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
         val dao = db.userDao()
-        //Without watching a flow no crash
+        //Without watching a flow from room no crash
         dao.watchCurrentUser().filterNotNull().launchIn(lifecycleScope)
     }
 }
