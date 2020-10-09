@@ -48,7 +48,7 @@ It seems to happens only in emulators, and sometimes running test through Androi
 
 ## More info
 
-An issue was opened on the [android-test repo](https://github.com/android/android-test), but was closed because there was no info nor reproducible sample.
+An [issue](https://github.com/android/android-test/issues/352) was opened on the [android-test repo](https://github.com/android/android-test), but was closed because there was no info nor reproducible sample.
 
 The developer [ricard-v](https://github.com/ricard-v) gathered more info for this problems, which might have more results that just the above (SIGSEV in logcat, which I got sometimes)
 Here are somes of his posts:
